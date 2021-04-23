@@ -1,0 +1,81 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport" />
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+
+<title>Portfolio</title>
+</head>
+<body>
+  <div class="box">
+    <header id="header" class="header">
+                  <div class = "texth"><h1 class = "logo-text">Lorem Ipsum</h1></div>
+                  <button id = "menuBtn" onclick="showMenu()"><i class = "fa fa-bars"></i></button>
+                  <ul class = "topnav" id="myTopnav">
+                      <li><a href="#" accesskey="a" class = "active">About</a></li>
+                      <li><a href="#" accesskey="s">Services</a></li>
+                      <li><a href="#" accesskey="c">Cuisine</a></li>
+                      <li><a href="#" accesskey="g">Gallery</a></li>
+                      <li><a href="#" accesskey="p">Contact</a></li>
+                      <li><a href="#" accesskey="b">Book</a></li>
+                  </ul>
+                  
+                  <a href = "" id = "cartButton">
+                    <i class="material-icons" id = "icon">shopping_cart</i>
+                    <span id = "buttonText">Cart</span>
+                  </a>
+            </header>
+
+    <main>
+        <section class = "heading">
+              <h1>What are you<br>having for lunch?</h1>
+        </section>
+
+        <section class="tiles">
+          <figure>
+              <img src="tacos.jpg" alt="tacos" >
+              <figcaption>Mexican Tacos</figcaption>
+          </figure>
+          <figure>
+              <img src="pizza.jpg" alt="pizza" >
+              <figcaption>Farmhouse Pizza</figcaption>
+          </figure> 
+          <figure>
+              <img src="burger.jpg" alt="burger" >
+              <figcaption>Chicken Burger</figcaption>
+          </figure> 
+          <figure>
+              <img src="nachos.jpg" alt="nachos" >
+              <figcaption>Loaded Nachos</figcaption>
+          </figure> 
+          <figure>
+              <img src="noodles.jpg" alt="noodles" >
+              <figcaption>Veg Hakka Noodles</figcaption>
+          </figure>
+        </section>
+
+        <section class = "para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et.
+          <hr align="left">
+        </section>
+      
+    </main>
+  </div>
+
+  <script>
+    function showMenu(){
+      var x = document.getElementById("myTopnav");
+      if (x.style.display == "none"){
+        x.style.display ="block";
+      }
+      else
+        x.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
